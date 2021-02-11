@@ -45,12 +45,6 @@ function mk_timer()
     return $ret
 }
 
-function repopick()
-{
-    T=$(gettop)
-    $T/vendor/ZERO/build/tools/repopick.py $@
-}
-
 if [ "x$SHELL" != "x/bin/bash" ]; then
     case `ps -o command -p $$` in
         *bash*)
