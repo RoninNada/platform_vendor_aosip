@@ -8,7 +8,7 @@ PRODUCT_PACKAGES += \
     messaging \
     Turbo
 
-ifeq ($(AOSIP_BUILDTYPE), Official)
+ifeq ($(ZERO_BUILDTYPE), Official)
     PRODUCT_PACKAGES += \
         Updater
 endif

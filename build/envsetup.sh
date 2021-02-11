@@ -2,7 +2,7 @@ function hmm() {
 cat <<EOF
 Invoke ". build/envsetup.sh" from your shell to add the following functions to your environment:
 - lunch:     lunch <product_name>-<build_variant>
-- gerrit:    Adds a remote for AOSiP Gerrit
+- gerrit:    Adds a remote for ZERO Gerrit
 
 
 Look at the source to view more functions. The complete list is:
@@ -48,7 +48,7 @@ function mk_timer()
 function repopick()
 {
     T=$(gettop)
-    $T/vendor/aosip/build/tools/repopick.py $@
+    $T/vendor/ZERO/build/tools/repopick.py $@
 }
 
 function gerrit()
@@ -103,7 +103,7 @@ function cout()
 function fixup_common_out_dir() {
     common_out_dir=$(get_build_var OUT_DIR)/target/common
     target_device=$(get_build_var TARGET_DEVICE)
-    if [ ! -z $AOSIP_FIXUP_COMMON_OUT ]; then
+    if [ ! -z $ZERO_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
             mv ${common_out_dir} ${common_out_dir}-${target_device}
             ln -s ${common_out_dir}-${target_device} ${common_out_dir}

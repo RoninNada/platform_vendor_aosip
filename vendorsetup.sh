@@ -1,3 +1,3 @@
-for f in $(cat vendor/aosip/aosip.devices); do
-    add_lunch_combo aosip_$f-userdebug;
+for f in $(cat vendor/zero/zero.devices); do
+    add_lunch_combo zero_$f-userdebug;
 done

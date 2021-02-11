@@ -18,14 +18,14 @@ PRODUCT_VERSION_MINOR = 1
 
 DATE := $(shell date +%Y%m%d)
 
-AOSIP_BUILDTYPE ?= Derp
-AOSIP_BUILD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
-AOSIP_VERSION := $(AOSIP_BUILD_VERSION)-$(AOSIP_BUILDTYPE)-$(AOSIP_BUILD)-$(DATE)
+ZERO_BUILDTYPE ?= Derp
+ZERO_BUILD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
+ZERO_VERSION := $(ZERO_BUILD_VERSION)-$(ZERO_BUILDTYPE)-$(ZERO_BUILD)-$(DATE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.aosip.build.version=$(AOSIP_BUILD_VERSION) \
-  ro.aosip.build.date=$(DATE) \
-  ro.aosip.buildtype=$(AOSIP_BUILDTYPE) \
-  ro.aosip.version=$(AOSIP_VERSION) \
-  ro.aosip.device=$(AOSIP_BUILD) \
-  ro.modversion=$(AOSIP_VERSION)
+  ro.zero.build.version=$(ZERO_BUILD_VERSION) \
+  ro.zero.build.date=$(DATE) \
+  ro.zero.buildtype=$(ZERO_BUILDTYPE) \
+  ro.zero.version=$(ZERO_VERSION) \
+  ro.zero.device=$(ZERO_BUILD) \
+  ro.modversion=$(ZERO_VERSION)
