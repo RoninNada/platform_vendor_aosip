@@ -1,7 +1,4 @@
-ifeq ($(ZERO_BUILD), mata)
+ifeq ($(PRODUCT_DEVICE),angler)
 PRODUCT_COPY_FILES += \
-    vendor/zero/prebuilt/common/bootanimation/bootanimation1312.zip:system/media/bootanimation.zip
-else
-PRODUCT_COPY_FILES += \
-    vendor/zero/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    vendor/zero/prebuilt/common/bootanimation/angler-bootanimation.zip:system/media/bootanimation.zip
 endif
