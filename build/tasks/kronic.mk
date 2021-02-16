@@ -6,7 +6,7 @@ kronic: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(ZERO_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(ZERO_TARGET_PACKAGE) | cut -d ' ' -f1 > $(ZERO_TARGET_PACKAGE).md5sum
 	@echo -e ""
-	@echo -e "${cya}Building ${bldcya}AOSiP ${txtrst}";
+	@echo -e "${cya}Building ${bldcya}ZERO ${txtrst}";
 	@echo -e ""
 	@echo -e ${CL_GRN}"            ▄▄▄·       .▄▄ · ▪   ▄▄▄·          "
 	@echo -e ${CL_GRN}"           ▐█ ▀█ ▪     ▐█ ▀. ██ ▐█ ▄█          "
