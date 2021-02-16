@@ -97,9 +97,6 @@ PRODUCT_PACKAGES += \
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/zero/overlay/common
 
-# Bootanimation
-include vendor/zero/config/bootanimation.mk
-
 # Packages
 include vendor/zero/config/packages.mk
 
