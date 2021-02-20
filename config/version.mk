@@ -23,9 +23,9 @@ AOSIP_BUILD_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
 AOSIP_VERSION := $(AOSIP_BUILD_VERSION)-$(AOSIP_BUILDTYPE)-$(AOSIP_BUILD)-$(DATE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.aosip.build.version=$(AOSIP_BUILD_VERSION) \
-  ro.aosip.build.date=$(DATE) \
-  ro.aosip.buildtype=$(AOSIP_BUILDTYPE) \
-  ro.aosip.version=$(AOSIP_VERSION) \
-  ro.aosip.device=$(AOSIP_BUILD) \
+  ro.zero.build.version=$(AOSIP_BUILD_VERSION) \
+  ro.zero.build.date=$(DATE) \
+  ro.zero.buildtype=$(AOSIP_BUILDTYPE) \
+  ro.zero.version=$(AOSIP_VERSION) \
+  ro.zero.device=$(AOSIP_BUILD) \
   ro.modversion=$(AOSIP_VERSION)
